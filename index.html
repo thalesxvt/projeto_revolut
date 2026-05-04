@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking & Beyond</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons\logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Revolut</h2>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li class="nav-item" data-target="panel-personal"><a href="#">Personal</a></li>
+                    <li class="nav-item" data-target="panel-business"><a href="#">Business</a></li>
+                    <li class="nav-item" data-target="panel-kids"><a href="#">Kids & Teens</a></li>
+                    <li class="nav-item" data-target="panel-company"><a href="#">Company</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn-login">Log in</a>
+                <a href="#" class="btn-signup">Sign up</a>
+            </div>
+
+            <!-- 1. AQUI ESTÁ O NOVO BOTÃO HAMBÚRGUER -->
+            <button class="mobile-menu-btn" id="openMenuBtn" aria-label="Abrir menu">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- Container dos Mega Menus Dinâmicos (SEU CÓDIGO INTACTO) -->
+        <div class="mega-menus-container">
+
+            <!-- Painel 1: Personal -->
+            <div class="mega-panel" id="panel-personal">
+                <div class="panel-header">
+                    <h3>Discover Revolut &rarr;</h3>
+                </div>
+                <div class="panel-grid">
+                    <div class="column">
+                        <h4>Accounts</h4>
+                        <a href="#">Bank Account</a>
+                        <a href="#">Joint Account</a>
+                        <a href="#">Professional Account</a>
+                        <a href="#">Savings Account</a>
+                        <a href="#">For ages 16-17</a>
+                        <a href="#">Parents and guardians</a>
+
+                        <h4 style="margin-top: 1.5rem;">Smart Spending</h4>
+                        <a href="#">Cards</a>
+                        <a href="#">Send & Receive</a>
+                        <a href="#">Money Management</a>
+                        <a href="#">RevPoints</a>
+                    </div>
+                    <div class="column">
+                        <h4>Security & Protection</h4>
+                        <a href="#">How We Protect Your Money</a>
+                        <a href="#">Report Lost Device</a>
+                        <a href="#">Learn About Fraud & Scams</a>
+                        <a href="#">Consumer Security Insight Report</a>
+
+                        <h4 style="margin-top: 1.5rem;">Investments</h4>
+                        <a href="#">Stocks</a>
+                        <a href="#">Stocks & Shares ISA</a>
+                        <a href="#">Commodities</a>
+
+                        <h4 style="margin-top: 1.5rem;">Crypto</h4>
+                        <a href="#">Crypto</a>
+                    </div>
+                    <div class="column">
+                        <h4>Mobile & Connectivity</h4>
+                        <a href="#">Mobile Plans</a>
+                        <a href="#">Data Plans</a>
+
+                        <h4 style="margin-top: 1.5rem;">Global Finances</h4>
+                        <a href="#">International Transfers</a>
+
+                        <h4 style="margin-top: 1.5rem;">Revolut AI</h4>
+                        <a href="#">AIR</a>
+
+                        <h4 style="margin-top: 1.5rem;">Help</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Help Centre</a>
+                        <a href="#">System Status</a>
+                    </div>
+                    <div class="column">
+                        <h4>Plans</h4>
+                        <a href="#">Standard</a>
+                        <a href="#">Plus</a>
+                        <a href="#">Premium</a>
+                        <a href="#">Metal</a>
+                        <a href="#">Ultra</a>
+                        <br>
+                        <a href="#">Compare Plans</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel 2: Business -->
+            <div class="mega-panel" id="panel-business">
+                <div class="panel-header">
+                    <h3>Discover Revolut Business &rarr;</h3>
+                </div>
+                <div class="panel-grid">
+                    <div class="column">
+                        <h4>Essentials</h4>
+                        <a href="#">Multi-Currency Account</a>
+                        <a href="#">Expense Management</a>
+                        <a href="#">Corporate Cards</a>
+                        <a href="#">Titan</a>
+                        <a href="#">Money Transfers</a>
+                        <a href="#">Bills</a>
+
+                        <h4 style="margin-top: 1.5rem;">Treasury</h4>
+                        <a href="#">Currency Exchange</a>
+                        <a href="#">Savings</a>
+                        <a href="#">Crypto</a>
+                        <a href="#">FX Forwards</a>
+                    </div>
+                    <div class="column">
+                        <h4>Accept payments</h4>
+                        <a href="#">Accept Payments</a>
+                        <a href="#">In-person Payments</a>
+                        <a href="#">Online Payments</a>
+                        <a href="#">Point of Sale</a>
+                        <a href="#">Revolut Pay</a>
+
+                        <h4 style="margin-top: 1.5rem;">Platform</h4>
+                        <a href="#">Analytics</a>
+                        <a href="#">Business APIs</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Rewards</a>
+
+                        <h4 style="margin-top: 1.5rem;">Revolut People</h4>
+                        <a href="#">Revolut People</a>
+                    </div>
+                    <div class="column">
+                        <h4>GlobalHire</h4>
+                        <a href="#">Employer of Record</a>
+
+                        <h4 style="margin-top: 1.5rem;">Solutions</h4>
+                        <a href="#">Travel</a>
+                        <a href="#">Ecommerce</a>
+                        <a href="#">Marketing agencies</a>
+                        <a href="#">Technology & AI</a>
+                        <a href="#">Consulting</a>
+
+                        <h4 style="margin-top: 1.5rem;">Help & Resources</h4>
+                        <a href="#">Customer Help</a>
+                        <a href="#">Customer Stories</a>
+                        <a href="#">Business Resources</a>
+                    </div>
+                    <div class="column">
+                        <h4>Plans</h4>
+                        <a href="#">Business Account Pricing</a>
+                        <a href="#">Payment Acceptance Pricing</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel 3: Kids & Teens -->
+            <div class="mega-panel" id="panel-kids">
+                <div class="panel-flex">
+                    <a href="#">For ages 6-15</a>
+                    <a href="#">For ages 16-17</a>
+                    <a href="#">Parents and guardians</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+
+            <!-- Painel 4: Company -->
+            <div class="mega-panel" id="panel-company">
+                <div class="panel-header">
+                    <h3>Discover Our Company &rarr;</h3>
+                </div>
+                <div class="panel-grid">
+                    <div class="column">
+                        <h4>General</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">News & Media</a>
+                        <a href="#">Revolut Reviews</a>
+                    </div>
+                    <div class="column">
+                        <h4>Careers</h4>
+                        <a href="#">Careers</a>
+                        <a href="#">Working at Revolut</a>
+                        <a href="#">Culture</a>
+                        <a href="#">Talent Programmes</a>
+                        <a href="#">Talent Programmes STEM Champions</a>
+                        <a href="#">Diversity & Inclusion</a>
+                        <a href="#">Relocation with Revolut</a>
+                    </div>
+                    <div class="column">
+                        <h4>Shareholder Relations</h4>
+                        <a href="#">Annual Report</a>
+                        <a href="#">Reports and results</a>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- 2. AQUI ENTRA O NOVO MENU EM TELA CHEIA (OVERLAY MOBILE)   -->
+        <!-- Ele fica "escondido" aqui no final do cabeçalho           -->
+        <!-- ========================================================= -->
+        <div class="mobile-overlay" id="mobileMenu">
+            <!-- Cabeçalho do Menu: Logo e Botão Fechar -->
+            <div class="mobile-overlay-header">
+                <h2 class="dark-logo">Revolut</h2>
+                <button class="mobile-menu-btn close-btn" id="closeMenuBtn" aria-label="Fechar menu">
+                    <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Conteúdo Rolável do Menu -->
+            <div class="mobile-overlay-content">
+                <!-- Abas Superiores (Pills) -->
+                <div class="mobile-tabs">
+                    <span class="active">Personal</span>
+                    <span>Business</span>
+                    <span>Kids & Teens</span>
+                    <span>Company</span>
+                </div>
+
+                <a href="#" class="discover-link">Discover Revolut &rarr;</a>
+
+                <!-- Lista de Links Principais (Mobile Accordion) -->
+                <ul class="mobile-nav-list">
+
+                    <!-- Item 1: Accounts -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Accounts
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">Bank Account</a>
+                            <a href="#">Joint Account</a>
+                            <a href="#">Professional Account</a>
+                            <a href="#">Savings Account</a>
+                            <a href="#">For ages 16-17</a>
+                            <a href="#">Parents and guardians</a>
+                        </div>
+                    </li>
+
+                    <!-- Item 2: Smart Spending -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Smart Spending
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">Cards</a>
+                            <a href="#">Send & Receive</a>
+                            <a href="#">Money Management</a>
+                            <a href="#">RevPoints</a>
+                        </div>
+                    </li>
+
+                    <!-- Item 3: Security & Protection -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Security & Protection
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">How We Protect Your Money</a>
+                            <a href="#">Report Lost Device</a>
+                            <a href="#">Learn About Fraud & Scams</a>
+                            <a href="#">Consumer Security Insight Report</a>
+                        </div>
+                    </li>
+
+                    <!-- Item 4: Investments -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Investments
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">Stocks</a>
+                            <a href="#">Stocks & Shares ISA</a>
+                            <a href="#">Commodities</a>
+                        </div>
+                    </li>
+
+                    <!-- Item 5: Crypto -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Crypto
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">Crypto</a>
+                        </div>
+                    </li>
+
+                    <!-- Item 6: Mobile & Connectivity -->
+                    <li class="mobile-accordion">
+                        <div class="mobile-accordion-header">
+                            Mobile & Connectivity
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2"
+                                fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="mobile-accordion-body">
+                            <a href="#">Mobile Plans</a>
+                            <a href="#">Data Plans</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Rodapé Fixo do Menu (Botões) -->
+            <div class="mobile-overlay-footer">
+                <a href="#" class="btn-mobile-login">Log in</a>
+                <a href="#" class="btn-mobile-signup">Sign up</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- SEÇÃO MÁGICA: Unifica a Tela 1 (Hero) e a Tela 2 (Salary) -->
+        <section id="magic-section">
+
+            <!-- CAMADA DE BAIXO: A Tela Branca "Your Salary" -->
+            <div id="salary-content">
+                <div class="salary-header">
+                    <h2>Your salary, reimagined</h2>
+                    <p>Spend smartly, send quickly, sort your salary automatically, and watch your savings grow — all
+                        with a Revolut bank account.</p>
+                    <a href="#" class="btn-dark-pill">Move your salary</a>
+                </div>
+
+                <div class="cards-showcase">
+                    <!-- Card 1: Esquerda -->
+                    <div class="app-card card-side">
+                        <img src="icons/3126.png" alt="Personal EUR"
+                            style="width: 100%; height: 100%; object-fit: fill; display: block;">
+                    </div>
+
+                    <!-- O BURACO INVISÍVEL: A vaga onde a imagem da mulher vai estacionar ao encolher -->
+                    <div id="center-slot"></div>
+
+                    <!-- Card 3: Direita -->
+                    <div class="app-card card-side card-right">
+                        <img src="icons/2350.png" alt="Personal £2,350"
+                            style="width: 100%; height: 100%; object-fit: fill; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAMADA DE CIMA: A Imagem da Mulher que vai encolher -->
+            <div id="morph-bg">
+
+                <!-- Textos da Tela 1 (Somem na transição) -->
+                <div id="hero-texts">
+                    <h1>Banking & Beyond</h1>
+                    <div class="hero-left-block">
+                        <p>This is your bank, redefined. Get powerful daily banking and global freedom. Sign up for free
+                            in a tap.</p>
+                        <a href="#" class="btn-hero-dark">Download the app</a>
+                    </div>
+                </div>
+
+                <!-- Borda de Vidro do Celular (A borda some, a imagem transparente fica) -->
+                <div class="phone-outline" id="morph-outline">
+                    <img src="icons/6012.png" alt="Conteúdo do Celular"
+                        style="width: 100%; height: 100%; object-fit: fill; display: block;">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- === SEÇÃO: SOCIAL PROOF === -->
+        <section class="social-proof-section">
+            <div class="proof-container">
+                <h2>Join 70+ million customers worldwide and 13 million in the UK</h2>
+
+                <!-- Grid Superior: Prêmios e Trustpilot -->
+                <div class="proof-grid top-grid">
+                    <div class="proof-item">
+                        <img src="icons\apple-playstore.png" alt="App Stores">
+                        <p>#3 most downloaded finance app</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="icons\trustpilot.png" alt="Trustpilot">
+                        <p>4.7 out of 5 on Trustpilot</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="icons\best.png" alt="British Bank Awards">
+                        <p>Best International Payments Provider 2025</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="icons\fintech.png" alt="Fintech Breakthrough">
+                        <p>Best Consumer Banking Mobile App 2025</p>
+                    </div>
+                </div>
+
+                <!-- Grid Inferior: Selos de Satisfação -->
+                <div class="proof-grid bottom-grid">
+                    <div class="proof-item">
+                        <img src="icons\customersatisfaction.png" alt="Customer Satisfaction Gold">
+                        <p>Customer Satisfaction — Gold</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="icons\consumerguardian.png" alt="Consumer Guardian Badge">
+                        <p>Consumer Guardian Badge 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === SEÇÃO: CARTÕES FÍSICOS E VIRTUAIS === -->
+        <section class="cards-showcase-section">
+
+            <!-- Slide 1: Physical Cards -->
+            <div class="card-slide active" id="slide-physical">
+                <div class="card-content">
+                    <h2>Elevate your spend</h2>
+                    <p>Earn points on your purchases with one of our debit cards. Then redeem<br>them for Airline Miles
+                        and other rewards. RevPoints T&Cs apply.</p>
+                    <small>Some cards available on paid plans only. Fees may apply.</small>
+                    <br>
+                    <a href="#" class="btn-pill-white">Start earning</a>
+                </div>
+                <div class="card-image-container">
+                    <img src="icons\cartaofisico.png" alt="Physical Cards">
+                </div>
+            </div>
+
+            <!-- Slide 2: Virtual Cards -->
+            <div class="card-slide" id="slide-virtual">
+                <div class="card-content">
+                    <h2>Go virtual</h2>
+                    <p>Create and add virtual cards to your Apple Wallet or Google Wallet to<br>start paying right away.
+                    </p>
+                    <br><br>
+                    <a href="#" class="btn-pill-white">Create a card</a>
+                </div>
+                <div class="card-image-container">
+                    <img src="icons\cartaodigital.png" alt="Virtual Cards">
+                </div>
+            </div>
+
+            <!-- Botões de Controle Inferiores -->
+            <div class="cards-toggle-container">
+                <button class="toggle-btn active" data-target="physical">Physical cards</button>
+                <button class="toggle-btn" data-target="virtual">Virtual cards</button>
+            </div>
+
+        </section>
+
+        <!-- === SEÇÃO: AIR (AI ASSISTANT) === -->
+        <section class="air-section">
+            <div class="air-content">
+                <h2>Ask, and AIR makes it happen</h2>
+                <p>AI by Revolut, AIR, is your 24/7 personal assistant. Just open your app,<br
+                        class="desktop-break">swipe, and ask away.</p>
+
+                <!-- Reaproveitamos o botão da seção anterior! -->
+                <a href="#" class="btn-pill-white">Learn more</a>
+            </div>
+
+            <div class="air-image-container">
+                <!-- Cole o caminho da imagem do celular cortado aqui -->
+                <img src="icons\img3.png" alt="Revolut AIR Assistant na tela do celular">
+            </div>
+        </section>
+
+        <!-- === SEÇÃO: SAVINGS (AER INTEREST) === -->
+        <section class="savings-section">
+
+            <!-- Fundo Dinâmico (As 3 imagens em tela cheia) -->
+            <img src="icons\praia.png" alt="Adventure Savings" class="savings-bg active" id="bg-adventure">
+            <img src="icons\casamento.png" alt="Wedding Savings" class="savings-bg" id="bg-wedding">
+            <img src="icons\familia.png" alt="Moving Savings" class="savings-bg" id="bg-moving">
+
+            <!-- Conteúdo Fixo de Texto (Fica por cima das imagens) -->
+            <div class="savings-content">
+                <h2>Save with up to 4% AER (variable)</h2>
+                <p>Life, meet savings. Grow your money with 4% AER (variable) interest on<br>Instant Access Savings,
+                    paid every day.¹</p>
+                <small>The rate shown above is for our Ultra plan. Different rates apply per plan. The Annual Equivalent
+                    Rate<br>(AER) shows the interest you can earn over 1 year. AER is compounded, so you'll earn
+                    interest on<br>interest already earned. Interest is liable to applicable taxes. Paid plan fees and
+                    T&Cs apply.</small>
+
+                <a href="#" class="btn-pill-white">Explore Savings</a>
+            </div>
+
+            <!-- Botões de Controle Inferiores -->
+            <div class="savings-toggle-container">
+                <button class="savings-toggle-btn active" data-index="0">Adventure</button>
+                <button class="savings-toggle-btn" data-index="1">Wedding</button>
+                <button class="savings-toggle-btn" data-index="2">Moving</button>
+            </div>
+
+        </section>
+
+        <!-- === SEÇÃO: SECURITY (SAFE SPACE) === -->
+        <section class="security-section">
+            <div class="security-container">
+
+                <!-- Coluna da Esquerda: Texto e Botão -->
+                <div class="security-content">
+                    <h2>Your money’s safe space</h2>
+                    <p>With Revolut Secure, you’re entering the new era of money security — where your bank account has
+                        24/7 protection through proactive, purpose-built defences and a team of specialists.</p>
+
+                    <a href="#" class="btn-pill-black">Learn more</a>
+                </div>
+
+                <!-- Coluna da Direita: O GIF do Escudo -->
+                <div class="security-visual">
+                    <!-- Substitua pelo caminho do seu GIF -->
+                    <video autoplay loop muted playsinline src="icons\video_logo.mp4"></video>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- === SEÇÃO: STOCKS & ETFS === -->
+        <section class="stocks-section">
+            <div class="stocks-content">
+                <h2>Explore 5,000+ stocks and ETFs</h2>
+                <p>From Apple to Zoom, invest in some of the biggest and most influential<br>companies in the world,
+                    commission-free within your monthly<br>allowance.²</p>
+                <small>Other fees may apply. Capital at risk.</small>
+                <br><br>
+                <a href="#" class="btn-pill-white">Try it out</a>
+            </div>
+
+            <!-- O Palco do Vídeo -->
+            <div class="coins-video-container">
+                <!-- Coloque o caminho/nome do seu vídeo no 'src' -->
+                <!-- Atributos mágicos: autoplay (toca sozinho), loop (infinito), muted (sem som), playsinline (não abre em tela cheia no iPhone) -->
+                <video autoplay loop muted playsinline class="coins-video">
+                    <source src="icons\Video Project.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- === SEÇÃO: JOIN CTA & LEGAL NOTES === -->
+        <section class="join-legal-section">
+
+            <!-- Chamada Principal -->
+            <div class="join-cta">
+                <h2>Join the 70+ million using Revolut</h2>
+                <!-- Reaproveitando o nosso botão preto! -->
+                <a href="#" class="btn-pill-black">Download the app</a>
+            </div>
+
+            <!-- Textos Legais (Letras miúdas) -->
+            <div class="legal-notes">
+                <p>¹The Annual Equivalent Rate (AER) shows the interest you can earn over 1 year. AER is compounded, so
+                    you'll earn interest on interest already earned. Rates depend on your plan type and savings'
+                    currency, from up to 3% on our Standard plan to up to 4% on our Ultra plan. Paid plan subscription
+                    fees and T&Cs apply. Interest offered is subject to change and any interest earned is liable to the
+                    applicable taxes. Instant Access Savings T&Cs apply.</p>
+
+                <p>²INVESTMENT SERVICES: capital at risk.</p>
+
+                <p>Revolut Trading Ltd provides a non-advised execution-only service in shares. Revolut Trading Ltd does
+                    not provide investment advice or personal recommendations. You, as an individual investor, must make
+                    your own decisions, seeking independent professional advice if you are unsure as to the suitability
+                    or appropriateness of any investment for your individual circumstances or needs.</p>
+
+                <p>The value of investments can go up as well as down and you may receive less than your original
+                    investment or lose the value of your entire initial investment. Past performance and forecasts are
+                    not reliable indicators of future results. Currency rate fluctuations can adversely impact the
+                    overall returns on your original investment. Any trades outside of your monthly allowance are
+                    charged at 0.25% of the order amount if you are a Standard, Plus, Premium, or Metal customer, or at
+                    0.12% of the order amount if you are an Ultra/Trading Pro customer. <a href="#">Read more on these
+                        fees</a>. Further information about the investment service provided by Revolut Trading Ltd can
+                    be found in the <a href="#">Terms of Business</a>, <a href="#">Risk Disclosure</a>, and <a
+                        href="#">Invest FAQs</a>.</p>
+
+                <p>The registered address of Revolut Ltd, Revolut Travel Ltd, and Revolut Trading Ltd is at 30 South
+                    Colonnade, London, United Kingdom, E14 5HX. You can read more about our terms and policies here.</p>
+            </div>
+
+        </section>
+
+        <!-- === SEÇÃO: CHOOSE YOUR PLAN (PLANOS) === -->
+        <section class="plans-section">
+            <div class="plans-container">
+                <h2>Choose your plan</h2>
+
+                <div class="plans-grid">
+                    <!-- Linha 1: 3 Cartões -->
+                    <div class="plan-card col-span-2">
+                        <h3>Standard</h3>
+                        <span class="plan-price">Free</span>
+                        <p>For the financial basics — everything you need for better money management in one place.
+                            Sending money abroad or sticking to a budget has never been easier.</p>
+                        <svg class="plan-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <div class="plan-card col-span-2">
+                        <h3>Plus</h3>
+                        <span class="plan-price">£3.99/month</span>
+                        <p>For the smart spender — access additional benefits like better limits for spending abroad and
+                            insurance for your purchases, on our affordable paid plan.</p>
+                        <svg class="plan-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <div class="plan-card col-span-2">
+                        <h3>Premium</h3>
+                        <span class="plan-price">£7.99/month</span>
+                        <p>For elevating every day — access exclusive subscriptions, better savings rates, and exchange
+                            unlimited amounts of money.</p>
+                        <svg class="plan-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <!-- Linha 2: 2 Cartões mais largos -->
+                    <div class="plan-card col-span-3">
+                        <h3>Metal</h3>
+                        <span class="plan-price">£14.99/month</span>
+                        <p>For the global travellers and traders — relax with travel insurance, enjoy enhanced limits,
+                            and subscriptions worth £2,200 annually.</p>
+                        <svg class="plan-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+
+                    <div class="plan-card col-span-3">
+                        <h3>Ultra</h3>
+                        <span class="plan-price">£55/month (introductory offer)</span>
+                        <p>For those seeking the best of Revolut — get exceptional benefits like unlimited airport
+                            lounge access, monthly global data, partner subscriptions, and cancellation cover.</p>
+                        <svg class="plan-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === RODAPÉ (FOOTER / MAPA DO SITE) === -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+
+                <!-- Coluna 1 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Global Finances</h4>
+                        <a href="#">International Transfers</a>
+                        <a href="#">Lounges</a>
+                        <a href="#">Insurance</a>
+                    </div>
+                    <div class="footer-group">
+                        <h4>Investments</h4>
+                        <a href="#">Stocks</a>
+                        <a href="#">Stocks & Shares ISA</a>
+                        <a href="#">Commodities</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Help</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Help Centre</a>
+                        <a href="#">System Status</a>
+                        <a href="#">Developers API</a>
+                        <a href="#">Site Map</a>
+                    </div>
+                    <div class="footer-group">
+                        <h4>Company</h4>
+                        <a href="#">Sustainability</a>
+                        <a href="#">Code of Conduct</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Security & Protection</h4>
+                        <a href="#">How We Protect Your Money</a>
+                        <a href="#">Report Lost Device</a>
+                        <a href="#">Learn About Fraud & Scams</a>
+                        <a href="#">Security Bugs</a>
+                        <a href="#">Consumer Security Insight Report</a>
+                    </div>
+                    <div class="footer-group">
+                        <h4>Crypto</h4>
+                        <a href="#">Crypto</a>
+                        <a href="#">Revolut Ramp</a>
+                        <a href="#">Revolut X</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 4 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Plans</h4>
+                        <a href="#">Standard</a>
+                        <a href="#">Plus</a>
+                        <a href="#">Premium</a>
+                        <a href="#">Metal</a>
+                        <a href="#">Ultra</a>
+                        <a href="#">Compare Plans</a>
+                    </div>
+                    <div class="footer-group">
+                        <h4>Revolut AI</h4>
+                        <a href="#">AIR</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 5 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Accounts</h4>
+                        <a href="#">Bank Account</a>
+                        <a href="#">Joint Account</a>
+                        <a href="#">Professional Account</a>
+                        <a href="#">Savings Account</a>
+                        <a href="#">For ages 16-17</a>
+                        <a href="#">Parents and guardians</a>
+                    </div>
+                    <div class="footer-group">
+                        <h4>Mobile & Connectivity</h4>
+                        <a href="#">Mobile Plans</a>
+                        <a href="#">Data Plans</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 6 -->
+                <div class="footer-col">
+                    <div class="footer-group">
+                        <h4>Smart Spending</h4>
+                        <a href="#">Cards</a>
+                        <a href="#">Send & Receive</a>
+                        <a href="#">Money Management</a>
+                        <a href="#">RevPoints</a>
+                        <a href="#">Linked Accounts</a>
+                        <a href="#">Shops</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- === SUB-FOOTER (LEGAL & SEO) === -->
+        <div class="sub-footer-container">
+
+            <!-- Linha 1: Logo e Redes Sociais -->
+            <div class="sub-footer-top">
+                <div class="footer-logo">
+                    <!-- Substitua pelo logo oficial da Revolut em branco (SVG ou PNG) -->
+                    <h2>Revolut</h2>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                    <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.2c0 1.96-.5 3.96-1.72 5.39-1.14 1.36-2.9 2.1-4.7 2.12-1.92.03-3.88-.5-5.26-1.87-1.39-1.37-2.13-3.3-2.14-5.25-.01-1.95.73-3.89 2.11-5.27 1.39-1.39 3.37-2.12 5.33-2.11V12.4c-1.04-.04-2.12.25-2.93.93-.85.73-1.35 1.83-1.38 2.96-.02 1.13.48 2.25 1.32 2.98.86.75 2.05 1.05 3.16.94 1.1-.11 2.11-.71 2.75-1.57.65-.87.97-1.99.96-3.08V.02z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+
+            <!-- Linha 2: País e Links Institucionais -->
+            <div class="sub-footer-settings">
+                <div class="country-selector">
+                    <img src="icons\GB.png" alt="United Kingdom Flag" class="footer-flag">
+                    United Kingdom
+                </div>
+                <div class="legal-quick-links">
+                    <a href="#">Website Terms</a>
+                    <a href="#">Legal Agreements</a>
+                    <a href="#">Complaints</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">UK Modern Slavery Policy</a>
+                    <a href="#">Customer Vulnerability</a>
+                    <a href="#">Data Privacy Statement for Candidates</a>
+                </div>
+            </div>
+
+            <!-- Linha 3: Copyright e Textos Legais Extensos -->
+            <div class="sub-footer-legal-text">
+                <p>© Revolut Bank UK Ltd 2026</p>
+                <p>To find out more about which Revolut entity you receive services from, please check our corresponding
+                    <a href="#">FAQ page</a>. If you have any other questions, please reach out to us via the in-app
+                    chat in the Revolut app.
+                </p>
+                <p>Revolut Bank UK Ltd is registered in England and Wales (Registered No. 12871051). Registered address:
+                    30 South Colonnade, London, E14 5HX. Authorised by the Prudential Regulation Authority and regulated
+                    by the Financial Conduct Authority and Prudential Regulation Authority (Financial Services Register
+                    No. 981170).</p>
+                <p>Revolut Ltd is registered in England and Wales (No. 08804411), is authorised by the Financial Conduct
+                    Authority to offer e-money and payment services under the Electronic Money Regulations 2011 (FRN:
+                    900562), and is registered with the Financial Conduct Authority to offer cryptocurrency services
+                    under the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer)
+                    Regulations 2017. Commodities services are provided by Revolut Ltd and are not regulated by the
+                    Financial Conduct Authority.</p>
+                <p>Revolut Travel Ltd (No. 10618740) is authorised by the Financial Conduct Authority to undertake
+                    insurance distribution activities (FRN: 780586). Our insurance products are arranged by Revolut
+                    Travel Ltd and Revolut Ltd, an appointed representative of Revolut Travel Ltd.</p>
+                <p>Investment services are provided by Revolut Trading Ltd (No. 11567840), which is authorised and
+                    regulated by the Financial Conduct Authority (FRN: 933846).</p>
+                <p>The registered address of Revolut Ltd, Revolut Travel Ltd, and Revolut Trading Ltd is at 30 South
+                    Colonnade, London, United Kingdom, E14 5HX. You can read more about our <a href="#">terms and
+                        policies here</a>.</p>
+            </div>
+
+            <!-- Linha 4: Links de SEO Inferiores -->
+            <div class="sub-footer-seo">
+                <p><strong>International Money Transfers:</strong> <a href="#">Send Money to India</a> | <a
+                        href="#">Send Money to Nigeria</a> | <a href="#">Send Money to Poland</a> | <a href="#">Send
+                        Money to Ghana</a> | <a href="#">Send Money to Dubai</a> | <a href="#">Send Money to the UK from
+                        India</a> | <a href="#">Send Money to Saudi Arabia</a> | <a href="#">Send Money to North
+                        Macedonia</a> | <a href="#">Send Money to Kazakhstan</a></p>
+
+                <p><strong>Currency Converter:</strong> <a href="#">Convert GBP to INR</a> | <a href="#">Convert USD to
+                        GBP</a> | <a href="#">Convert GBP to EUR</a> | <a href="#">Convert GBP to USD</a> | <a
+                        href="#">Convert EUR to GBP</a> | <a href="#">Convert GBP to PKR</a> | <a href="#">Convert GBP
+                        to TRY</a> | <a href="#">Convert GBP to HKD</a> | <a href="#">Convert KRW to GBP</a> | <a
+                        href="#">Convert AED to GBP</a> | <a href="#">Convert INR to GBP</a> | <a href="#">Convert GBP
+                        to CAD</a> | <a href="#">Compare Exchange Rates</a></p>
+
+                <p><a href="#">Revolut USA</a> | <a href="#">Revolut Spain</a> | <a href="#">Revolut Australia</a> | <a
+                        href="#">Revolut Singapore</a> | <a href="#">Revolut Estonia</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
